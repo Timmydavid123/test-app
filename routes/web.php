@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\Authcontroller;
 use App\Http\Controllers\homeController;
 
 /*
@@ -19,6 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[homeController::class,'index']);
 Route::get('/register',[homeController::class,'register']);
 
